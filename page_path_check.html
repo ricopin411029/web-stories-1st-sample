@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>page_path override test.</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9QS224V0F2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9QS224V0F2', {
+//      'page_location': 'location-by-page_location - ' + new Date(),
+      'page_title': document.title + new Date(),
+      'page_path': 'page-by-page_path-w/o page_location - ' + new Date()
+  });
+</script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+        <h1>Welcome to the mobile web</h1>
+    </header>
+    <main>
+        <div class="main-contents">This is a test for web stories.</div>
+    </main>
+    <footer>Here is the footer. yukoga@</footer>
+  </body>
+</html>
+
