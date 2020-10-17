@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>page_path override test.</title>
+    <title>page_location override test.</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J87FKXEJSN"></script>
@@ -11,6 +11,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-J87FKXEJSN', {
+      'page_location': 'location-by-page_location - ' + new Date(),
       'page_title': document.title + ' - ' + new Date(),
       'page_path': 'page-by-page_path-w/o page_location - ' + new Date()
   });
@@ -18,10 +19,10 @@
   </head>
   <body>
     <header>
-        <h1>Test page for page_path parameter behavior.</h1>
+        <h1>Test page for page_location parameter behavior.</h1>
     </header>
     <main>
-        <div class="main-contents">In this page, the page_path parameter is populated to override actual URL path value.</div>
+        <div class="main-contents">In this page, the page_location parameter is populated to override actual URL path value.</div>
     </main>
     <footer>Here is the footer. yukoga@</footer>
   </body>
